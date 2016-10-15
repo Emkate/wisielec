@@ -1,0 +1,24 @@
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+#lettersDiv{
+    float: none;
+    margin: auto;
+}
+
+#hangmanDiv{
+    margin-bottom: 0;
+}
+
+#alphabetDiv{
+    margin-top: 0;
+}
+
+#hangmanDrawing{
+    border: black solid;
+}
+canvas{
+    width: 55%;
+}
