@@ -18,11 +18,11 @@ $(function(){
     startGameButton.click(function(){
         startGameButton.fadeOut(1000);
 
-        $("#hangmanDrawing").fadeOut(1000).remove();
+        $("#hangmanDrawing").remove();
 
         $("#youLose").fadeOut(1000).remove();
 
-        var wordArray = ["WARRIOR", "PERSON", "PLATE", "PARTY", "HOPEFUL", "DREAM", "NIGHT", "NIGHTMARE", "WORD", "ROOM", "BEAR", "BEER", "WINE", "CLOSE", "TALK", "PROUD", "SHOW", "PRIVATE", "PEOPLE", "CREEP", "QUICK", "RELIABLE", "FOOD", "FREE", "ART", "WORK", "WIN", "EXCERCISE", "POOL", "REPLY", "CHAIN", "SHIP", "SHIPMENT", "FRIENDSHIP", "RAT"];
+        var wordArray = ["ALFABET", "ARKTYKA", "ARSENAŁ", "BRODACZ", "CHAŁWA", "DROMADER", "DOMOWNIK", "DOMOFON", "EUCHARYSTIA", "ELEGANT", "FRANCZYZA", "GÓRA", "GROM", "GRAWEROWANY", "HARCERZ", "HUTA", "ROZEZNANY", "PRACA", "KOMBATANT", "ŻOŁNIERZ", "ŻANDARM", "KLAWISZ", "KLAWIATURA", "MYSZ", "CHŁOPIEC", "BIWAK", "RACICE", "SKAFANDER", "SOS", "FLĄDRA", "ŚLEDŹ", "PARDWA", "PRAWDA", "KOSMOS", "ASTRONAUTA", "MUCHA", "KRĘPY", "ZŁOM", "RUBIN"];
         numberOfLives = 5;
         clickedLetters = [];
 
@@ -45,7 +45,7 @@ $(function(){
                 lettersDiv.hide();
                 lettersDiv.fadeIn(1000);
 
-                alphabetDiv.append("<canvas id='hangmanDrawing' width='1200' height='900'></canvas>")
+                hangmanDiv.append("<canvas id='hangmanDrawing' width='1200' height='900'></canvas>");
 
                 alphabetDiv.fadeIn(1000);
         }, 1100);
@@ -68,7 +68,7 @@ $(function(){
                 var ctx = c.getContext("2d");
 
                 if(numberOfLives===4){
-                    ctx.lineWidth = 6;
+                    ctx.lineWidth = 12;
                     ctx.moveTo(210,900);
                     ctx.lineTo(210,120);
                     ctx.lineTo(600,120);
@@ -103,6 +103,7 @@ $(function(){
                     setTimeout(function(){
                         alphabetDiv.fadeOut(1000);
                         $("#lettersDiv").fadeOut(1000);
+                        $("#hangmanDrawing").fadeOut(1000);
 
 
                         setTimeout(function(){
@@ -127,6 +128,7 @@ $(function(){
                     setTimeout(function(){
                         alphabetDiv.fadeOut(1000);
                         $("#lettersDiv").fadeOut(1000);
+                        $("#hangmanDrawing").fadeOut(1000);
 
 
                         setTimeout(function(){

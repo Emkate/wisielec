@@ -10,6 +10,7 @@
 
 #hangmanDiv{
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 #alphabetDiv{
@@ -20,5 +21,5 @@
     border: black solid;
 }
 canvas{
-    width: 55%;
+    width: 40%;
 }
