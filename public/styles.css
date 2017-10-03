@@ -1,0 +1,42 @@
+/* --- 1366px --- */
+.col-centered {
+  float: none;
+  margin: 0 auto; }
+
+#lettersDiv {
+  float: none;
+  margin: auto; }
+
+#hangmanDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.button-letter__wrapper {
+  display: inline-block;
+  float: left;
+  margin: 3px; }
+
+.button-letter {
+  background-color: #aaa;
+  border: 1px #333 solid;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  outline: none; }
+
+.button-letter:hover {
+  background-color: #ddd; }
+
+#alphabetDiv {
+  margin: 30px 220px; }
+
+#hangmanDrawing {
+  border: black solid; }
+
+canvas {
+  width: 40%; }

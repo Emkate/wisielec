@@ -1,0 +1,14 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "scripts": {
+    "sass-watch": "node-sass -w sass/styles.scss public/styles.css"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
