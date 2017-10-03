@@ -7,7 +7,8 @@ the list of words are somewhere in .js file, not hard to find
 
 if you see some mistakes, just let me know
 
-##To play:
+To play:
+------------
 
 1. download the project
 1. enter project directory
